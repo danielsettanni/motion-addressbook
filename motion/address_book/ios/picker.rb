@@ -49,6 +49,16 @@ module AddressBook
       false
     end
 
+    def peoplePickerNavigationController(people_picker, didSelectPerson:ab_person)
+      hide(ab_person)
+      false
+    end
+
+    def peoplePickerNavigationController(people_picker, didSelectPerson:ab_person, property:property, identifier:id)
+      hide(ab_person)
+      false
+    end
+
     def peoplePickerNavigationControllerDidCancel(people_picker)
       hide
     end
